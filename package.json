@@ -2,20 +2,20 @@
   "name": "mimino",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://acvetochka.github.io/mimino",
+  "homepage": "https://acvetochka.github.io/mimino-js",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /mimino/"
+    "build": "parcel build src/*.html --public-url /mimino-js/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acvetochka/mimino.git"
+    "url": "git+https://github.com/acvetochka/mimino-js.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Alona Kuznietsova <acvetochka@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/acvetochka/mimino/issues"
+    "url": "https://github.com/acvetochka/mimino-js/issues"
   },
   "dependencies": {
     "aos": "^2.3.4",
