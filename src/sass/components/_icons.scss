@@ -1,0 +1,17 @@
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social__link{
+    color: $accent-color;
+
+    &:hover {
+        color: $accent-color-second;
+    }
+    
+}
+
+.social__icon {
+    fill: currentColor;
+}

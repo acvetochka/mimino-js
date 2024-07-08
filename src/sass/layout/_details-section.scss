@@ -1,0 +1,292 @@
+// DETAILS-RESTAURANT
+
+.details-restaurant-container {
+  padding-right: 0;
+
+  @media screen and (min-width: 540px) {
+    padding-right: $paddingPhone;
+  }
+
+  @include minW-Tablet {
+    padding-right: $paddingTablet;
+  }
+}
+
+.details-restaurant-container {
+  overflow: hidden;
+}
+
+.details-rest {
+  z-index: 1;
+
+  @include maxW-Phone {
+    padding-bottom: 40px;
+    max-width: 414px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    background-image: $gradient, url(../images/home-page/details-rest/backgroung-mob.jpg);
+
+    @include retina {
+      background-image: $gradient, url(../images/home-page/details-rest/backgroung-mob2x.jpg);
+    }
+  }
+
+  @include maxW-Tablet {
+    padding-bottom: 40px;
+    max-width: 1024px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    background-image: $gradient, url(../images/home-page/details-rest/background-tab.jpg);
+
+    @include retina {
+      background-image: $gradient, url(../images/home-page/details-rest/background-tab2x.jpg);
+    }
+  }
+
+  @include minW-Tablet {
+    padding-bottom: 40px;
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    background-image: $gradient, url(../images/home-page/details-rest/background-desk.jpg);
+
+    @include retina {
+      background-image: $gradient, url(../images/home-page/details-rest/background-desk2x.jpg);
+    }
+  }
+}
+
+.details-block {
+  @include minW-Dt {
+    padding-top: 48px;
+  }
+
+  @include minW-Tablet {
+    margin: 0;
+    margin-left: 278px;
+    max-width: none;
+  }
+
+  max-width: 243px;
+  margin: 0 auto;
+  padding-top: 24px;
+
+  &__title {
+    @include minW-Tablet {
+      font-size: 24px;
+    }
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+    color: $contrast-color;
+    padding-top: 12px;
+  }
+
+  &__text {
+    @include minW-Tablet {
+      font-size: 16px;
+      padding: 8px 0 40px;
+    }
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $contrast-color-descr;
+    padding: 20px 0 48px;
+  }
+}
+
+// .details-btn-prev {
+//   @include minW-Dt {
+//     cursor: pointer;
+//   }
+
+//   background-color: transparent;
+//   outline: none;
+//   cursor: none;
+//   border: none;
+// }
+
+// DETAILS-HOTEL
+
+.details-hotel-container {
+  padding-left: 0;
+
+  @include minW(540px) {
+    padding-left: $paddingPhone;
+  }
+
+  @include minW-Tablet {
+    padding-left: $paddingTablet;
+  }
+}
+
+.details-hotel {
+  @include maxW-Phone {
+    z-index: 1;
+    position: relative;
+    max-width: $phoneMin;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    background-image: $gradient, url(../images/home-page/details-hotel/backgroung-mob.jpg);
+  
+    @include retina {
+      background-image: $gradient, url(../images/home-page/details-hotel/backgroung-mob2x.jpg);
+    }
+  
+  }
+  
+  @include maxW-Tablet {
+    position: relative;
+    max-width: $tabletMin;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    background-image: $gradient, url(../images/home-page/details-hotel/backgroung-tab.jpg);
+
+    @include retina {
+      background-image: $gradient, url(../images/home-page/details-hotel/backgroung-tab2x.jpg);
+    }
+  }
+
+  @include minW-Tablet {
+    position: relative;
+    max-width: $desktopMin;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    background-image: $gradient, url(../images/home-page/details-hotel/background-desk.jpg);
+
+    @include retina {
+      background-image: $gradient, url(../images/home-page/details-hotel/background-desk2x.jpg);
+    }
+  }
+}
+
+.details-block-hotel {
+  @include minW-Dt {
+    padding-top: 48px;
+    // margin-right: 253px;
+    max-width: 595px;
+    // margin: 0 auto;
+    margin-right: 278px;
+    // text-align: end;
+  }
+
+  @include minW-Tablet {
+    // margin: 0;
+    // transform: translateX(231px);
+    margin-right: 231px;
+    min-width: 549px;
+  }
+
+  max-width: 243px;
+  margin: 0 auto;
+  padding-top: 24px;
+
+  &--logo {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: end;
+    transform: translateX(0.3em);
+  }
+
+  &__title {
+    @include minW-Tablet {
+      font-size: 24px;
+    }
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+    color: $contrast-color;
+    padding-top: 12px;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__text {
+    // @include minW-Dt {
+    //   margin-left: 237px;
+    // }
+
+    @include minW-Tablet {
+      font-size: 16px;
+      padding: 8px 0 40px;
+    }
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $contrast-color-descr;
+    padding: 20px 0 48px;
+    // margin-left: 20px;
+  }
+}
+
+.details-btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+
+  @include minW-Dt {
+    transform: translateY(20px);
+  }
+
+  // @include maxW-Tablet {
+  //  margin-left: auto;
+  //  margin-right: auto;
+}
+// }
+
+.button-service__details {
+  margin-bottom: 16px;
+}
+
+// //sliders
+// .details-hotel .swiper-and-buttons-container {
+//   // padding-right: 40px;
+//   // padding-left: 0;
+//   @include minW-Tablet{
+//       // flex-direction: row;
+//       padding-left: 50px;
+//       // padding-right: $paddingTablet;
+// }
+// }
+
+// .details-hotel .swiper {
+//   flex-direction: row-reverse;
+// }
+
+// .swiper-details__slide.swiper-slide-next {
+//   width: 150px !important;
+
+//   & img {
+//     width: 100%;
+//     object-fit: cover;
+//     object-position: center;
+//   }
+
+// }
