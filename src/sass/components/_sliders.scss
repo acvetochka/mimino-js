@@ -4,7 +4,7 @@
 
 // ABOUT-HOTEL-SLIDER
 .swiper-hotel-container {
-    transform: scale(-1, 1);
+
     margin-top: 32px;
     margin-right: auto;
     max-width: 305px;
@@ -27,6 +27,7 @@
     .swiper-hotel__buttons {
         display: flex;
         justify-content: flex-start;
+        transform: scale(-1, 1);
         gap: 32px;
         height: 32px;
         margin-top: 20px;
@@ -281,7 +282,7 @@
 
 .swiper-hotel-details-container {
     width: 100%;
-    transform: scale(-1, 1);
+
 
     @include maxW-Phone {
         transform: scale();
@@ -306,6 +307,7 @@
     gap: 32px;
     height: 32px;
     margin-top: 16px;
+    transform: scale(-1, 1);
     // margin-bottom: 32px;
 }
 
@@ -434,7 +436,6 @@
 }
 
 .swiper-luxe-container {
-    transform: scale(-1, 1);
     // margin-top: 32px;
     margin-right: auto;
     max-width: 305px;
@@ -454,6 +455,7 @@
 
     .swiper-luxe__buttons {
         display: flex;
+        transform: scale(-1, 1);
         justify-content: flex-end;
         gap: 32px;
         height: 32px;
@@ -590,7 +592,6 @@
 }
 
 .swiper-three-bed-container {
-    transform: scale(-1, 1);
     margin-top: 32px;
     margin-right: auto;
     max-width: 305px;
@@ -611,6 +612,7 @@
     .swiper-three-bed__buttons {
         display: flex;
         justify-content: flex-end;
+        transform: scale(-1, 1);
         gap: 32px;
         height: 32px;
         margin-top: 20px;
