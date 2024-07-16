@@ -1,44 +1,83 @@
-const rooms = [
-    {
-        name: "slide1",
-        alt: "Двомісний номер люкс, спальня"
-    },
-    {
-        name: "slide2",
-        alt: "Двомісний номер люкс, вітальня"
-    },
-    {
-        name: "slide3",
-        alt: "Двомісний номер люкс, ванна"
-    }
-]
+// import slide1d from "../../images/room-page/room-slide1-desktop.jpg";
+// import slide1d2 from "../../images/room-page/room-slide1-desktop@2x.jpg";
+// import slide1t from "../../images/room-page/room-slide1-tablet.jpg";
+// import slide1t2 from "../../images/room-page/room-slide1-tablet@2x.jpg";
+// import slide1m from "../../images/room-page/room-slide1-mobile.jpg";
+// import slide1m2 from "../../images/room-page/room-slide1-mobile@2x.jpg";
+// import slide2d from "../../images/room-page/room-slide2-desktop.jpg";
+// import slide2d2 from "../../images/room-page/room-slide2-desktop@2x.jpg";
+// import slide2t from "../../images/room-page/room-slide2-tablet.jpg";
+// import slide2t2 from "../../images/room-page/room-slide2-tablet@2x.jpg";
+// import slide2m from "../../images/room-page/room-slide2-mobile.jpg";
+// import slide2m2 from "../../images/room-page/room-slide2-mobile@2x.jpg";
+// import slide3d from "../../images/room-page/room-slide3-desktop.jpg";
+// import slide3d2 from "../../images/room-page/room-slide3-desktop@2x.jpg";
+// import slide3t from "../../images/room-page/room-slide3-tablet.jpg";
+// import slide3t2 from "../../images/room-page/room-slide3-tablet@2x.jpg";
+// import slide3m from "../../images/room-page/room-slide3-mobile.jpg";
+// import slide3m2 from "../../images/room-page/room-slide3-mobile@2x.jpg";
+
+// const rooms = [
+//     {
+//         name: "slide1",
+//         desktop: slide1d,
+//         desktop2: slide1d2,
+//         tablet: slide1t,
+//         tablet2: slide1t2,
+//         mobile: slide1m,
+//         mobile2: slide1m2,
+//         alt: "Двомісний номер люкс, спальня"
+//     },
+//     {
+//         name: "slide2",
+//         desktop: slide2d,
+//         desktop2: slide2d2,
+//         tablet: slide2t,
+//         tablet2: slide2t2,
+//         mobile: slide2m,
+//         mobile2: slide2m2,
+//         alt: "Двомісний номер люкс, вітальня"
+//     },
+//     {
+//         name: "slide3",
+//         desktop: slide3d,
+//         desktop2: slide3d2,
+//         tablet: slide3t,
+//         tablet2: slide3t2,
+//         mobile: slide3m,
+//         mobile2: slide3m2,
+//         alt: "Двомісний номер люкс, ванна"
+//     }
+// ]
+
+import {rooms} from "../../data/slideRooms.js";
 
 const slidContainer = document.querySelector(".room-hero .swiper-wrapper");
 
 function renderSlideRoom() {
-    const markup = rooms.map(({name, alt})=> `<div class="swiper-slide">
+    const markup = rooms.map(({desktop, desktop2, tablet,tablet2, mobile, mobile2, alt})=> `<div class="swiper-slide">
         <picture>
           <source
             srcset="
-              ./images/room-page/room-${name}-desktop.jpg    1x,
-              ./images/room-page/room-${name}-desktop@2x.jpg 2x
+              ${desktop}    1x,
+              ${desktop2} 2x
             "
             media="(min-width: 1280px)"
           />
           <source
             srcset="
-              ./images/room-page/room-${name}-tablet.jpg    1x,
-              ./images/room-page/room-${name}-tablet@2x.jpg 2x
+              ${tablet}    1x,
+              ${tablet2} 2x
             "
             media="(min-width: 481px)"
           />
           <img
             class="swiper-slide__img"
             srcset="
-              ./images/room-page/room-${name}-mobile.jpg    1x,
-              ./images/room-page/room-${name}-mobile@2x.jpg 2x
+              ${mobile}    1x,
+              ${mobile2} 2x
             "
-            src="./images/room-page/room-${name}-mobile.jpg"
+            ${mobile}"
             alt=${alt}
           />
         </picture>
